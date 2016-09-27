@@ -1,0 +1,120 @@
+body {
+  background: url("http://i.imgur.com/jA0PuRM.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Bree Serif', serif;
+  color: #fff;
+  padding: 15px;
+  text-shadow: 1px 0px #000;
+}
+.central {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.central img {
+  max-width: 100%;
+}
+.titulo {
+  font-size: 4em;
+  margin: 10px 0px;
+}
+.subtitulo {
+  font-size: 0.5em;
+  margin: 10px 0px;
+}
+.relogio {
+  font-size: 6em;
+}
+.relogio .countdown {
+  height: 130px;
+}
+.share {
+  width: 480px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+   -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.share .whatsapp {
+  width: 100px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  text-shadow: none;
+  text-decoration: none;
+  background-color: #43d854;
+  font-size: 0.8em;
+  border-radius: 5px;
+  margin: auto;
+}
+.share .whatsapp i {
+	margin-right: 10px;
+}
+.share iframe {
+  margin: 15px auto;
+}
+.twitter-timeline-box {
+  width: 480px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+	.share {
+		width:100%;
+		padding: 0px 15px;
+	}
+
+	.twitter-timeline-box {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.central img {
+		width: 80%;
+	}	
+
+	.titulo {
+		font-size: 2.5em;		
+	}
+	.relogio {
+		font-size: 3em;
+	}
+}
